@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MyMDb</title>
+        <!-- Required meta tags for Bootstrap and JQuery -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- CSS imports -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/ui-lightness/jquery-ui.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+        
+        <!-- JS Imports -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.js"></script>
+        <!-- Rename the JQueryUI 'tooltip' and 'button' classes to 'uitooltip' and 'uibutton' so that they won't conflict with Bootstrap's 'tooltip' and 'button' classes. -->
+        <script>
+            $.widget.bridge('uitooltip', $.ui.tooltip);
+            $.widget.bridge('uibutton', $.ui.button);
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        
+        <div id="head">
+            <h1>Welcome to MyMDb</h1>
+            <h4 id='status'></h4>
+        </div>
+        <div id="movie-tabs" class="container-fluid">
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="brief-tab" data-toggle="tab" href="#brief-view">Brief View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="detail-tab" data-toggle="tab" href="#detail-view">Detailed View</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="reception-tab" data-toggle="tab" href="#reception">Critical Reception</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myContent">
+                <div class="tab-pane fade show active" id="brief-view" >
+                    <table class="table table-striped">
+                        <thead>
+                            <th scope="col">Poster</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Year</th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="detail-view">
+                </div>
+                <div class="tab-pane fade" id="reception">
+                    <table class="table table-striped">
+                        <thead>
+                            <th scope="col">Poster</th>
+                            <th scope="col">IMDb Score</th>
+                            <th scope="col">Rotten Tomatoes</th>
+                            <th scope="col">Metacritic</th>
+                            <th scope="col">Awards</th>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

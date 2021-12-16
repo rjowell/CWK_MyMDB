@@ -1,0 +1,24 @@
+td > img{
+    height: 6rem;
+}
+
+#head{
+    margin:auto;
+    text-align: center !important;
+}
+
+#movie-tabs{
+    width: 80%;
+}
+
+#myContent{
+    height: 40rem;
+    overflow-y: scroll;
+}
+
+#detail-view > * > img{
+    height: 10rem;
+}
+.row > * > img{
+    width: 100%;
+}
